@@ -27,14 +27,14 @@ public class TEST2 {
     @MockBean
     private BookController repository;
 
-    @Test
-    public void getBooks(){
-        ArrayList<Book> list = new ArrayList<Book>();
-        list.add(new Book(1, "Abcd", "str"));
-        list.add(new Book(3, "Abce", "sda"));
-        when(repository.getBooks()).thenReturn(list);
-        ArrayList<Book> books = (ArrayList<Book>) service.getBooks();
-        assert books.size() == list.size();
-    }
+//    @Test
+//    public void getBooks(){
+//        ArrayList<Book> list = new ArrayList<Book>();
+//        list.add(new Book(1, "Abcd", "str"));
+//        list.add(new Book(3, "Abce", "sda"));
+//        when(repository.getBooks()).thenReturn(list);
+//        ArrayList<Book> books = (ArrayList<Book>) service.getBooks();
+//        assert books.size() == list.size();
+//    }
 
 }

@@ -41,7 +41,7 @@ public class SpringMockitoApplicationTests {
         int  id = 4;
         when(repository.findAll()).thenReturn(Stream
                 .of(new Book(500, "Danile",  "USA"), new Book(958, "Huy",  "UK")).collect(Collectors.toList()));
-        assertEquals(1, service.getBooks().size());
+        assertEquals(2, service.getBooks().size());
     }
 
 //    @Test
